@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Lato:ital,wght@0,700;1,700&family=Mulish:ital,wght@1,1000&display=swap');
+
+body {
+    background-color: aquamarine;
+    overflow: hidden;
+}
+.container {
+    width: 35%;
+    margin: 32px auto;
+}
+.header{
+    height: 250px;
+
+}
+.header h1{
+    color: darkblue;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Mulish', sans-serif;
+    position: relative; /*top-right-bottom-left*/
+    animation: header;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes header {
+    0% {top: -250px;}
+    100% {top: 130px;}
+    
+}
+.main{
+    color: darkgreen;
+    font-family: 'Lato', sans-serif;
+
+  } 
+  .text-left{
+    position: relative;
+    animation: textleft ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  } 
+
+  @keyframes textleft {
+    0% {left: -2000px;}
+    85%{left: 150px;}
+    100% {left:0;}
+    }
+  .text-right{
+    margin-top: 32px;
+    position: relative;
+    text-align: right;
+    animation: textright ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes textright{
+    0% {right: -2000px;}
+    85% {right: 150px;}
+    100% {right:0;}
+  }
+
+  .footer{
+  text-align: center;
+  position: relative;
+  animation: bottom;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  }
+  @keyframes bottom{
+    0% {bottom: -1000px;}
+    85%{ bottom: 100px;}
+    100%{bottom: 0;}
+  }
+  .btn{
+    border: solid wheat;
+    color: rgba(65, 21, 131, 0.847);
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
